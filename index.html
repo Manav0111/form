@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <!-- CSS only -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: aqua;
+            background-image: url("https://www.athletadesk.com/wp-content/uploads/2016/08/join-background.jpg");
+            background-image: url("http://ak2.picdn.net/shutterstock/videos/12107552/thumb/1.jpg");
+            background-image: url("https://c8.alamy.com/comp/CTTK61/abstract-background-security-concept-login-form-on-digital-screen-CTTK61.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+           
+           border-color: 5px solid red;
+            background-color: #007bff;;
+            height: 80vh;
+            width: 50vw;
+            margin: auto;
+            margin-top: 55px;
+        }
+        #hea{
+            height: 80px;
+            text-align: center;
+            background-color: darkblue;
+            color: white;
+            
+        }
+        #hea h1{
+            text-align: center;
+            align-items: center;
+            padding-top: 20px;
+        }
+
+
+        #CS,#uni,#NA,#EM,#PASS,#regs{
+            
+            padding-left: 20px;
+            margin-top: 40px;
+            font-size: larger;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            
+
+        }
+
+        
+        input{
+            margin-left: 30px;
+            
+        }
+
+        
+
+        footer{
+            display: flex;
+            justify-content:center;
+            align-items: flex-end;
+            height: 50px;
+            background-color: darkblue;
+            color: white;
+            margin-top: 50px;
+            padding-top: 20px;
+            font-size: medium;
+            font-family: sans-serif;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+   
+    <div class="container">
+        
+        <form action="" class="info" id="info">
+            <div>
+                <header id="hea">
+                    <h1>REGISTRTION FORM</h1>
+                </header>
+            </div>
+
+            <div id="NA">
+                <label for="name">Name :  </label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+
+            <div id="EM">
+                <label for="email">Email : </label>
+                <input type="email" id="email" placeholder="Enter your email id">
+            </div>
+            <div id="PASS">
+                <label for="pass">Password : </label>
+                <input type="password" id="pass" placeholder="Enter a valid Password">
+            </div>
+
+            <div id="uni"> 
+            <label for="university">University Name : </label>
+            <input type="text" id="university" placeholder="Enter your university name">
+            </div>
+   
+   
+            <div id="CS">
+                <label>Choose Subject : </label>
+                <input type="checkbox" name="section" value="Math">
+                <label>MATH</label>
+                <input type="checkbox" name="section" value="Cse">
+                <label>CSE</label>
+                <input type="checkbox" name="section" value="Ece">
+                <label>ECE</label>
+                <input type="checkbox" name="section" value="MEC">
+                <label>MEC</label>
+                </div>
+
+                <div id="regs" class="submit">
+                    <button type="button" class="btn btn-light">REGISTER</button>
+                    
+
+                </div>
+
+                <footer id="foot">
+                    <h4>&copy; Manav Goyal</h4>
+
+                </footer>
+
+    </form>
+    </div>
+
+</body>
+
+</html>
