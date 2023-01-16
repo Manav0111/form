@@ -5,3 +5,5 @@ console.log("Hello World"); // 2nd line
 function main(){
   return null;
 }
+
+main();
